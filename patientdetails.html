@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             body{
+                background-color: rgb(157, 235, 235);
+            }
+            #a1{
+                position: relative;
+                background-color: rgb(184, 194, 94);
+                width: 500px;
+                height: 500px;
+                left:450px;
+                top:100px;
+                border-radius: 20px;
+                box-shadow: 15px 15px black;
+            }
+            #b1{
+                position: absolute;
+                top:-100px;
+                left:100px;
+                text-shadow: 5px 2px 5px rgb(153, 133, 133);
+            }
+            #a2{
+                position: absolute;
+                top:40px;
+                left: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="a1">
+            <h1 id="b1">PATIENT DETAILS</h1>
+            <div id="a2">
+                <form action="./slotbookin.html" method="post">
+                    <label for="fname">FIRST NAME</label>
+                    <br>
+                    <input type="text" id="fname" name="firstname" required placeholder="enter firstname">
+                    <br>
+                    <br>
+                    <label for="lname">LAST NAME</label>
+                    <br>
+                    <input type="text" id="lname" name="lastname" required placeholder="enter lastname">
+                    <br>
+                    <br>
+                    <label for="date">DOB</label>
+                    <br>
+                    <input type="date" id="date" name="date" required placeholder="enter firstname">
+                    <br>
+
+                    <br>
+                    <input type="radio" id="gender" name="gender" required value="M" >
+                    <label for="gender">MALE</label> 
+                    <input type="radio" id="fgender" name="gender" required value="F" >
+                    <label for="fgender">FEMALE</label> 
+                    <br><br>
+                    <label for="email">EMAIL</label>
+                    <br>
+                    <input type="email" id="email" name="email" required placeholder="mail">
+                    <br><br>
+                    <label for="prblm">PROBLEM</label>
+                    <br>
+                    <textarea required placeholder="explain briefly" name="problem" rows="5" cols="30" id="prblm"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit">
+                    
+                </form>
+            </div>
+
+
+        </div>
+    </body>
+</html>
